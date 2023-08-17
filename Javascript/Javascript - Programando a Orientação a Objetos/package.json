@@ -1,0 +1,19 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto do bytebank para seus clientes",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VSRohod/AluraMaterial.git"
+  },
+  "author": "Victor Santos Rohod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VSRohod/AluraMaterial/issues"
+  },
+  "homepage": "https://github.com/VSRohod/AluraMaterial#readme"
+}
