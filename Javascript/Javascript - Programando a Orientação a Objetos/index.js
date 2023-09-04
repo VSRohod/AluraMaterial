@@ -71,7 +71,7 @@ ContaCorrenteRicardo.cliente = cliente1;
 
 const conta2 = new ContaCorrente();
 conta2.cliente = cliente2
-
+conta2.agencia = 102;
 // console.log(ContaCorrenteRicardo.saldo);
 // ContaCorrenteRicardo.depositar(100);
 // ContaCorrenteRicardo.depositar(200);
@@ -80,5 +80,12 @@ conta2.cliente = cliente2
 // let valorSacado = 200;
 const valorSacado = ContaCorrenteRicardo.sacar(50);
 console.log(valorSacado); // sem return volta undefined
+
+let valor = 200
+ContaCorrenteRicardo.depositar(500);
+ContaCorrenteRicardo.transferir(500, conta2);
+
+console.log("Valor: ", valor)
+console.log(conta2);
 
 // discussão se # será implementada para atributo privado no js class
