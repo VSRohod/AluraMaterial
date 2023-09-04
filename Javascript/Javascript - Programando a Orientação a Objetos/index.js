@@ -1,3 +1,6 @@
+import {Cliente} from "./Cliente.js";
+import {ContaCorrente} from "./ContaCorrente.js";
+
 // const cliente1Nome = "Ricardo";
 // const cliente1CPF = 1112223309;
 // const cliente1Agencia = 1001;
@@ -18,12 +21,12 @@ const cliente3Saldo = 0;
 
 // colocando em uma class
 
-class Cliente {
-    nome;
-    cpf;
-    // agencia;
-    // saldo;
-}
+// class Cliente {
+//     nome;
+//     cpf;
+//     // agencia;
+//     // saldo;
+// }
 
 const cliente1 = new Cliente();
 cliente1.nome = "Ricardo";
@@ -41,35 +44,39 @@ console.log(cliente2);
 
 // class é um molde de objeto, new Cliente é uma instancia!
 
-class ContaCorrente {
-    agencia;
-    saldo;
+// class ContaCorrente {
+//     agencia;
+//     saldo;
 
-    sacar(valor){
-        if(this.saldo >= valor){ //this para se referir a conta corrente atual
-            this.saldo -= valor;  
-            return valor // pois senão ele não retorna o valor definido, para a aplicação
-        }
-    }
+//     sacar(valor){
+//         if(this.saldo >= valor){ //this para se referir a conta corrente atual
+//             this.saldo -= valor;  
+//             return valor // pois senão ele não retorna o valor definido, para a aplicação
+//         }
+//     }
 
-    depositar(valor){
-        if(this.saldo > 0){ //this para se referir a conta corrente atual
-            return;
-        }
-        this.saldo += valor;    
+//     depositar(valor){
+//         if(this.saldo > 0){ //this para se referir a conta corrente atual
+//             return;
+//         }
+//         this.saldo += valor;    
 
-    }
-}
+//     }
+// }
 
 const ContaCorrenteRicardo = new ContaCorrente();
 ContaCorrenteRicardo.saldo = 0;
 ContaCorrenteRicardo.agencia = 1001;
+ContaCorrenteRicardo.cliente = cliente1;
 
-console.log(ContaCorrenteRicardo.saldo);
-ContaCorrenteRicardo.depositar(100);
-ContaCorrenteRicardo.depositar(200);
-ContaCorrenteRicardo.depositar(-1);
-console.log(ContaCorrenteRicardo.saldo);
+const conta2 = new ContaCorrente();
+conta2.cliente = cliente2
+
+// console.log(ContaCorrenteRicardo.saldo);
+// ContaCorrenteRicardo.depositar(100);
+// ContaCorrenteRicardo.depositar(200);
+// ContaCorrenteRicardo.depositar(-1);
+// console.log(ContaCorrenteRicardo.saldo);
 // let valorSacado = 200;
 const valorSacado = ContaCorrenteRicardo.sacar(50);
 console.log(valorSacado); // sem return volta undefined
