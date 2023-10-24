@@ -11,11 +11,11 @@ import {ContaCorrente} from "./ContaCorrente.js";
 // const cliente2Agencia = 1001;
 // const cliente2Saldo = 0;
 
-const cliente3Nome = "Alice";
-const cliente3Rg = 10923;
-const cliente3CPF = 9992223309;
-const cliente3Agencia = 1001;
-const cliente3Saldo = 0;
+//const cliente3Nome = "Alice";
+//const cliente3Rg = 10923;
+//const cliente3CPF = 9992223309;
+//const cliente3Agencia = 1001;
+//const cliente3Saldo = 0;
 
 // console.log(cliente1Nome);
 
@@ -28,19 +28,22 @@ const cliente3Saldo = 0;
 //     // saldo;
 // }
 
-const cliente1 = new Cliente();
-cliente1.nome = "Ricardo";
-cliente1.cpf = 1112223309;
-// cliente1.agencia = 1001;
-// cliente1.saldo = 0;
-console.log(cliente1);
+const cliente1 = new Cliente("Ricardo", 1112223309);
+const cliente2 = new Cliente("Alice", 8882223309);
 
-const cliente2 = new Cliente();
-cliente1.nome = "Alice";
-cliente1.cpf = 8882223309;
+let numeroDeContas = 0;
+//cliente1.nome = "Ricardo";
+//cliente1.cpf = 1112223309;
 // cliente1.agencia = 1001;
 // cliente1.saldo = 0;
-console.log(cliente2);
+//console.log(cliente1);
+
+//const cliente2 = new Cliente();
+//cliente1.nome = "Alice";
+//cliente1.cpf = 8882223309;
+// cliente1.agencia = 1001;
+// cliente1.saldo = 0;
+//console.log(cliente2);
 
 // class é um molde de objeto, new Cliente é uma instancia!
 
@@ -64,28 +67,37 @@ console.log(cliente2);
 //     }
 // }
 
-const ContaCorrenteRicardo = new ContaCorrente();
-ContaCorrenteRicardo.saldo = 0;
-ContaCorrenteRicardo.agencia = 1001;
-ContaCorrenteRicardo.cliente = cliente1;
+const ContaCorrenteRicardo = new ContaCorrente(1001, cliente1);
+ContaCorrenteRicardo.depositar(500);
 
-const conta2 = new ContaCorrente();
-conta2.cliente = cliente2
-conta2.agencia = 102;
+
+//ContaCorrenteRicardo.saldo = 0;
+//ContaCorrenteRicardo.agencia = 1001;
+//ContaCorrenteRicardo.cliente = cliente1;
+
+const conta2 = new ContaCorrente(102, cliente2);
+
+//conta2.cliente = 0;
+//conta2.cliente.nome = "Alice";
+//conta2.cliente.cpf = 8882223309;
+
+//conta2.cliente = cliente2
+// conta2.agencia = 102;
 // console.log(ContaCorrenteRicardo.saldo);
 // ContaCorrenteRicardo.depositar(100);
 // ContaCorrenteRicardo.depositar(200);
 // ContaCorrenteRicardo.depositar(-1);
 // console.log(ContaCorrenteRicardo.saldo);
 // let valorSacado = 200;
-const valorSacado = ContaCorrenteRicardo.sacar(50);
-console.log(valorSacado); // sem return volta undefined
+// const valorSacado = ContaCorrenteRicardo.sacar(50);
+// console.log(valorSacado); // sem return volta undefined
 
 let valor = 200
-ContaCorrenteRicardo.depositar(500);
-ContaCorrenteRicardo.transferir(500, conta2);
+// ContaCorrenteRicardo.depositar(500);
+ContaCorrenteRicardo.transferir(valor, conta2);
 
-console.log("Valor: ", valor)
-console.log(conta2);
+console.log(conta2.numeroDeContas)
+
+// console.log(cliente2);
 
 // discussão se # será implementada para atributo privado no js class
