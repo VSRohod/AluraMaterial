@@ -9,7 +9,7 @@
  <li>Javascript - Manipulando o DOM 🍏</li>
  <li>Javascript - EcmaScript 8 e 9 novas formas de escrever em Js 💛</li>
  <li>Javascript - Explorando a linguagem 💛</li>
- <li>Javascript - Programando a Orientação a Objetos 💛</li>
+ <li>Javascript - Programando a Orientação a Objetos 🍏</li>
  <li>Javascript - Validando formulários 💛</li>
 </ul>
 <h3>JQUERY</h3>
