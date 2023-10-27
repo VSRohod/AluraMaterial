@@ -1,0 +1,37 @@
+//AULA FUNÇÕES PRINTS E VARIAVIES
+>>> print("Brasil","ganhou",5,"titulos mundiais", sep="-")
+Brasil-ganhou-5-titulos mundiais
+>>> pais = "italia"
+>>> type(pais)
+<class 'str'>
+>>> quantidade = 4
+>>> type(quantidade)
+<class 'int'>
+>>> print(pais)
+italia
+>>> print(pais,"ganhou", quantidade, "titulos mundiais")
+italia ganhou 4 titulos mundiais
+
+//AULA O LAÇO COM FOR
+//FOR
+>>> for rodada in range(1,10):
+...     print(rodada)
+...
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>> for rodada in range(1,10,2): //de onde parte, até onde, passos
+...     print(rodada)
+...
+1
+3
+5
+7
+9
+>>>

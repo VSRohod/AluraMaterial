@@ -1,0 +1,20 @@
+instalação - python org
+
+-Anotações
+✍️Pyhton usa snake_case para nome de var (ex -> var_legal)
+✍️outro método é o camelCase para nome de var (ex -> varLegal)
+
+-Comandos básicos no cmd
+
+⭕print() - imprimir
+⭕quit() - fechar
+⭕print
+	➡️sep="" - separador (ex,print("Brasil","ganhou",5,"titulos mundiais", sep="-") -> Brasil-ganhou-5-titulos mundiais )
+	➡️end="" - fim da linha (sendo \n, quebra da linha)
+⭕varNome = "Info legal" - variavel
+⭕type(varNome) - imprimir o tipo de variavel
+
+-types var :
+🍪int (inteiro)
+🍪str (string)
+🍪float (decimal)
