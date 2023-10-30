@@ -12,7 +12,7 @@ for rodada in range(1,total_de_tentativas + 1) :
     print("Tentativa {} de {}".format(rodada,total_de_tentativas))
     # interpolação de strings
 
-    chute = input("Digite o seu número: ")
+    chute = input("Digite o seu número entre 1 e 100: ")
     print("Você digitou", chute)
 
     # arquitetura if
@@ -24,6 +24,9 @@ for rodada in range(1,total_de_tentativas + 1) :
     # int() converte para numero int
 
     chuteInt = int(chute)
+    
+    if(chute < 1 or chute > 100):
+        print("Você deve digitar um número entre 1 e 100")
 
     acertou = numero_secreto == chuteInt
     maior = chuteInt > numero_secreto
@@ -31,6 +34,7 @@ for rodada in range(1,total_de_tentativas + 1) :
         
     if (acertou):
         print("Você acertou")
+        break
     else:
         if(maior):
             print("Você errou! o seu chute foi maior que o número secreto.")
