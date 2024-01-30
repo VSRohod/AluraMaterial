@@ -35,3 +35,6 @@ italia ganhou 4 titulos mundiais
 7
 9
 >>>
+// importar funções
+>>> import random
+>>> random.random()

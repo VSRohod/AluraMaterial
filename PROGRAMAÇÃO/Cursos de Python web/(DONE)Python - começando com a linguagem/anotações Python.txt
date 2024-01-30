@@ -13,6 +13,7 @@ instalação - python org
 	➡️end="" - fim da linha (sendo \n, quebra da linha)
 ⭕varNome = "Info legal" - variavel
 ⭕type(varNome) - imprimir o tipo de variavel
+⭕def - função
 
 -types var :
 🍪int (inteiro)
